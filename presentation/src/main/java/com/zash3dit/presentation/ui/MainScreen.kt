@@ -19,6 +19,15 @@ import com.zash3dit.data.local.SettingsDataStore
 import com.zash3dit.presentation.navigation.Screen
 import com.zash3dit.domain.model.ThemeMode
 import com.zash3dit.presentation.ui.theme.Zash3ditTheme
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
+import androidx.compose.material3.Text
+import androidx.compose.runtime.collectAsState
+import androidx.compose.ui.unit.dp
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
