@@ -1,4 +1,4 @@
-package com.zash3dit.presentation.ui.theme
+package com.zash3dit.domain.model
 
 enum class ThemeMode {
     SYSTEM,

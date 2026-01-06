@@ -48,6 +48,9 @@ dependencies {
     // Coil
     implementation "io.coil-kt:coil-compose:$rootProject.ext.coil_version"
 
+    // ExoPlayer
+    implementation "com.google.android.exoplayer:exoplayer:$rootProject.ext.exoplayer_version"
+
     // Test dependencies
     testImplementation 'junit:junit:4.13.2'
     testImplementation 'org.mockito:mockito-core:5.8.0'

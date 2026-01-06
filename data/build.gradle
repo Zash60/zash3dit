@@ -31,6 +31,9 @@ dependencies {
     implementation "androidx.room:room-ktx:$rootProject.ext.room_version"
     ksp "androidx.room:room-compiler:$rootProject.ext.room_version"
 
+    // DataStore
+    implementation "androidx.datastore:datastore-preferences:1.0.0"
+
     // Test dependencies
     testImplementation 'junit:junit:4.13.2'
     testImplementation 'org.mockito:mockito-core:5.8.0'

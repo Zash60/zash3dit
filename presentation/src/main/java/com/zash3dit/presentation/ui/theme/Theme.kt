@@ -5,6 +5,7 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.darkColorScheme
 import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
+import com.zash3dit.domain.model.ThemeMode
 
 private val DarkColorScheme = darkColorScheme(
     primary = androidx.compose.ui.graphics.Color(0xFFBB86FC),

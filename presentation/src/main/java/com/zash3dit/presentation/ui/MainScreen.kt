@@ -17,7 +17,7 @@ import androidx.navigation.navArgument
 import androidx.navigation.NavType
 import com.zash3dit.data.local.SettingsDataStore
 import com.zash3dit.presentation.navigation.Screen
-import com.zash3dit.presentation.ui.theme.ThemeMode
+import com.zash3dit.domain.model.ThemeMode
 import com.zash3dit.presentation.ui.theme.Zash3ditTheme
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -34,10 +34,10 @@ fun MainScreen() {
 
         Scaffold(
             bottomBar = {
-                BottomNavigation {
+                NavigationBar {
                     val items = listOf(Screen.Home, Screen.Editor, Screen.Settings)
                     items.forEach { screen ->
-                        BottomNavigationItem(
+                        NavigationBarItem(
                             icon = {
                                 when (screen) {
                                     Screen.Home -> Icon(Icons.Default.Home, contentDescription = null)

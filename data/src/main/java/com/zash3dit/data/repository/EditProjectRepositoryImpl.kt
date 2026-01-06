@@ -1,5 +1,6 @@
 package com.zash3dit.data.repository
 
+import androidx.room.withTransaction
 import com.zash3dit.data.local.AppDatabase
 import com.zash3dit.data.mapper.toDomain
 import com.zash3dit.data.mapper.toEntity
@@ -83,7 +84,7 @@ class EditProjectRepositoryImpl(
     }
 
     override suspend fun insertProject(project: EditProject): Long {
-        return database.runInTransaction {
+        return database.withTransaction {
             val projectId = projectDao.insertProject(project.toEntity())
             val updatedProject = project.copy(id = projectId)
             insertClipsForProject(updatedProject)
@@ -92,7 +93,7 @@ class EditProjectRepositoryImpl(
     }
 
     override suspend fun updateProject(project: EditProject) {
-        database.runInTransaction {
+        database.withTransaction {
             projectDao.updateProject(project.toEntity())
             // Delete existing clips and overlays
             videoClipDao.deleteClipsForProject(project.id)
