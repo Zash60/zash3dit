@@ -1,7 +1,7 @@
 plugins {
     id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
-    id 'kotlin-kapt'
+    id 'com.google.devtools.ksp'
 }
 
 android {
@@ -29,7 +29,7 @@ dependencies {
     // Room
     implementation "androidx.room:room-runtime:$rootProject.ext.room_version"
     implementation "androidx.room:room-ktx:$rootProject.ext.room_version"
-    kapt "androidx.room:room-compiler:$rootProject.ext.room_version"
+    ksp "androidx.room:room-compiler:$rootProject.ext.room_version"
 
     // Test dependencies
     testImplementation 'junit:junit:4.13.2'

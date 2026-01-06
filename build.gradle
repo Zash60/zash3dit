@@ -4,19 +4,20 @@ buildscript {
         mavenCentral()
     }
     ext {
-        kotlin_version = '1.9.24'
-        compose_version = '1.6.0'
-        compose_compiler_version = '1.6.0'
-        agp_version = '8.4.0'
-        room_version = '2.6.1'
-        coil_version = '2.5.0'
+        kotlin_version = '1.9.25'
+        compose_version = '1.6.8'
+        compose_compiler_version = '1.6.8'
+        agp_version = '8.6.0'
+        room_version = '2.7.0'
+        coil_version = '2.6.0'
         exoplayer_version = '2.19.1'
         ffmpegkit_version = '6.0.LTS'
-        navigation_version = '2.7.6'
+        navigation_version = '2.7.7'
     }
     dependencies {
         classpath "com.android.tools.build:gradle:$agp_version"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "com.google.devtools.ksp:com.google.devtools.ksp.gradle.plugin:1.9.25-1.0.20"
     }
 }
 
