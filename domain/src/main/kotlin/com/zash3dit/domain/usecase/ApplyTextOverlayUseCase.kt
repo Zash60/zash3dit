@@ -27,7 +27,7 @@ class ApplyTextOverlayUseCase(private val repository: EditProjectRepository) {
         }
 
         // Build drawtext filters for each overlay
-        val drawtextFilters = relevantOverlays.mapIndexed { index, overlay ->
+        val drawtextFilters = relevantOverlays.map { overlay ->
             val relativeStartTime = maxOf(0L, overlay.startTime - clip.startTime) / 1000.0
             val relativeEndTime = minOf(clip.duration, overlay.startTime + overlay.duration - clip.startTime) / 1000.0
 

@@ -28,7 +28,6 @@ class ApplyAudioMixingUseCase(private val repository: EditProjectRepository) {
 
         // Build FFmpeg command with amix filter
         val inputs = mutableListOf<String>()
-        val filterComplex = mutableListOf<String>()
 
         // Add video input
         inputs.add("-i \"${videoClip.filePath}\"")

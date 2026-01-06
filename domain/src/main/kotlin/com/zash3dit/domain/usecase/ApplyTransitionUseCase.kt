@@ -28,7 +28,6 @@ class ApplyTransitionUseCase(private val repository: EditProjectRepository) {
 
         for (i in 0 until clips.size - 1) {
             val currentClip = clips[i]
-            val nextClip = clips[i + 1]
             val transitionType = currentClip.transitionType
             val duration = currentClip.transitionDuration / 1000f // Convert to seconds
 
