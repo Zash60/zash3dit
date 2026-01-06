@@ -4,7 +4,7 @@ buildscript {
         mavenCentral()
     }
     ext {
-        kotlin_version = '1.9.25'
+        kotlin_version = '2.0.0'
         compose_version = '1.6.8'
         compose_compiler_version = '1.6.8'
         agp_version = '8.6.0'
@@ -17,7 +17,7 @@ buildscript {
     dependencies {
         classpath "com.android.tools.build:gradle:$agp_version"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-        classpath "com.google.devtools.ksp:com.google.devtools.ksp.gradle.plugin:1.9.25-1.0.20"
+        classpath "com.google.devtools.ksp:com.google.devtools.ksp.gradle.plugin:2.0.0-1.0.21"
     }
 }
 
