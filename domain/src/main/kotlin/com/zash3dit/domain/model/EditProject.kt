@@ -1,6 +1,6 @@
 package com.zash3dit.domain.model
 
-enum class ExportResolution(val width: Int, val height: Int, val displayName: String) {
+enum class ExportResolution(val resolution: String, val width: Int, val height: Int, val displayName: String) {
     HD_720("1280x720", 1280, 720, "HD (1280x720)"),
     FULL_HD_1080("1920x1080", 1920, 1080, "Full HD (1920x1080)");
 

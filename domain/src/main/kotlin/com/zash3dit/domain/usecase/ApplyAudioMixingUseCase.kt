@@ -61,7 +61,5 @@ class ApplyAudioMixingUseCase(private val repository: EditProjectRepository) {
             val command = "-i \"${videoClip.filePath}\" -i \"${audioClip.filePath}\" -filter_complex \"[${delay}${volume}amix=inputs=2:duration=first[aout]\" -map 0:v -map \"[aout]\" -c:v copy -c:a aac -shortest \"$outputPath\""
             return command
         }
-
-        return command
     }
 }
