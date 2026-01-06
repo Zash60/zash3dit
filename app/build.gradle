@@ -65,7 +65,7 @@ dependencies {
     implementation "com.google.android.exoplayer:exoplayer:$rootProject.ext.exoplayer_version"
 
     // FFmpegKit
-    implementation "com.arthenica:ffmpegkit:$rootProject.ext.ffmpegkit_version"
+    implementation "com.github.arthenica:ffmpeg-kit:$rootProject.ext.ffmpegkit_version"
 
     // Room
     implementation "androidx.room:room-runtime:$rootProject.ext.room_version"
