@@ -1,0 +1,26 @@
+buildscript {
+    ext {
+        kotlin_version = '1.9.22'
+        compose_version = '1.5.8'
+        compose_compiler_version = '1.5.8'
+        agp_version = '8.2.0'
+        room_version = '2.6.1'
+        coil_version = '2.5.0'
+        exoplayer_version = '2.19.1'
+        ffmpegkit_version = '6.0.LTS'
+        navigation_version = '2.7.6'
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:$agp_version"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "com.android.tools.build:gradle:$agp_version"
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' } // For FFmpegKit
+    }
+}
